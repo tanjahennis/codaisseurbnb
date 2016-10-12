@@ -25,3 +25,14 @@ describe "shared/_navbar.html.erb" do
     end
   end
 end
+
+describe "shared/_navbar.html.erb" do
+
+  context "user not signed in" do
+    it "renderes sign up and log in links" do
+      render
+      expect(rendered).to have_content "Log In"
+      expect(rendered).to have_content "Sign Up"
+    end
+  end
+end

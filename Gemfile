@@ -64,3 +64,7 @@ source 'https://rubygems.org'
 ruby '2.2.5'
 
 gem 'rails_12factor', group: :productiond
+
+gem 'carrierwave'
+
+gem 'cloudinary'

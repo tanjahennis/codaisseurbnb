@@ -4,7 +4,7 @@ describe "Navigating rooms" do
   before { login_as user }
 
   let(:user) { create :user }
-  let(:room) { create :room, user: user }
+  let!(:room) { create :room, user: user }
 
   it "allows navigation from the detail page to the listing page" do
     visit room_url(room)

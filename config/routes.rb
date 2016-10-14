@@ -6,7 +6,9 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   resources :users, only: [:show]
-  resources :rooms
+  resources :rooms do
+    resources :bookings, only: [:create]
+  end
   resources :profiles, only: [:new, :edit, :create, :update]
   resources :photos
 end

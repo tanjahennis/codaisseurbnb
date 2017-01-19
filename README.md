@@ -1,24 +1,44 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby on Rails application in the second week of the Codaisseur traineeship.
 
-Things you may want to cover:
+What was covered:
+* PostgreSQL database
+* Testing with RSpec and Capybara
+* Basic authentication with Devise
+* Associations: one-to-many, many-to-many, one-to-one
+* Using factories with FactoryGirl and Faker
+* Uploading images using CarrierWave and Cloudinary
+* Deployment with DEIS
+* Basic AJAX
 
-* Ruby version
+## Getting Started
 
-* System dependencies
+Make sure you have [Ruby](https://www.ruby-lang.org/en/documentation/installation/) and [Rails](http://guides.rubyonrails.org/getting_started.html#installing-rails) installed.
 
-* Configuration
+Clone the repository and enter the project directory
 
-* Database creation
+Install all dependencies
+	```bash
+	bundle install
+	```
 
-* Database initialization
+Create database and migrate schema; seed the database
+	```bash
+	rake db:create
+	rake db:migrate
+	rake db:seed
+	```
 
-* How to run the test suite
+Run the application - it should be available on http://localhost:3000
+	```bash
+	rails s
+	```
 
-* Services (job queues, cache servers, search engines, etc.)
+## Run the Tests
 
-* Deployment instructions
+RSpec is used for the tests. To run it, just type the following in your command prompt:
 
-* ...
+```bash
+ rspec
+```

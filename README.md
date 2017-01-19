@@ -19,21 +19,21 @@ Make sure you have [Ruby](https://www.ruby-lang.org/en/documentation/installatio
 Clone the repository and enter the project directory
 
 Install all dependencies
-	```bash
-	bundle install
-	```
+```bash
+bundle install
+```
 
 Create database and migrate schema; seed the database
-	```bash
-	rake db:create
-	rake db:migrate
-	rake db:seed
-	```
+```bash
+rake db:create
+rake db:migrate
+rake db:seed
+```
 
 Run the application - it should be available on http://localhost:3000
-	```bash
-	rails s
-	```
+```bash
+rails s
+```
 
 ## Run the Tests
 

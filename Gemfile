@@ -60,7 +60,9 @@ group :test do
   gem 'capybara', '~> 2.9', '>= 2.9.1'
 end
 
+# authentication
 gem 'devise'
+gem 'has_secure_token'
 
 source 'https://rubygems.org'
 ruby '2.2.5'

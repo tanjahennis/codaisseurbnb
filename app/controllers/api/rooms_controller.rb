@@ -1,7 +1,4 @@
 class Api::RoomsController < ApplicationController
-  skip_before_action :verify_authenticity_token
-
-
   def index
     rooms = Room.all
     render status: 200, json: rooms

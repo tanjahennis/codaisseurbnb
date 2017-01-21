@@ -11,6 +11,7 @@ What was covered:
 * Uploading images using CarrierWave and Cloudinary
 * Deployment with DEIS
 * Basic AJAX
+* Token based authentication
 
 ## Getting Started
 

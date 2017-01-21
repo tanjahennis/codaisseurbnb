@@ -1,4 +1,4 @@
-class Api::BookingsController < ApplicationController
+class Api::BookingsController < Api::BaseController
   before_filter :set_room
 
   def create

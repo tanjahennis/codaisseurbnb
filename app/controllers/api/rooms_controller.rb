@@ -1,4 +1,4 @@
-class Api::RoomsController < ApplicationController
+class Api::RoomsController < Api::BaseController
   def index
     rooms = Room.all
     render status: 200, json: rooms
@@ -10,7 +10,7 @@ class Api::RoomsController < ApplicationController
   end
 
   def create
-    room = Room.new(room_params)
+    room = @user.rooms.build(room_params)
 
     if room.save
       render status: 200, json: room
